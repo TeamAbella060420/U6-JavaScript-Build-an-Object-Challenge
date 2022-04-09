@@ -1,3 +1,4 @@
+const main = document.querySelector('main');
 let html = '';
 
 for ( let i = 0; i < pets.length; i++) {
@@ -9,3 +10,5 @@ for ( let i = 0; i < pets.length; i++) {
         <img src = "${pet.photo}" alt = "${pet.breed}">
     `   
 }
+
+main.insertAdjacentHTML('beforeend', html);
